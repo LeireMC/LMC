@@ -4,7 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ejercicio 5-Completo</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Debrable</h1>
+      <nav>
+        <ul>
+          <li><a href="#peliculas">Mi Top 10 películas</a></li>
+          <li><a href="#japon">Mi viaje a Japón</a></li>
+          <li><a href="#contacto">Mándame un mensaje</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <section id="peliculas">
+          <h2>Mi Top 10 películas</h2>
+          <ol>
+            <li>El padrino</li>
+            <li>La lista de Schindler</li>
+            <li>El Padrino. Parte II</li>
+            <li>Cadena perpetua</li>
+            <li>Pulp Fiction</li>
+          </ol>
+          <ol>
+            <li>El Rey León</li>
+            <li>Forresy Gump</li>
+            <li>La vida es bella</li>
+            <li>Gladiator</li>
+            <li>Coco</li>
+          </ol>
+        </section>
+        <article id="japon">
+          <h2>Mi Viaje a Japón</h2>
+          <img width="200" src="japon.jpg" alt="Templo Japon">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, facilis id repellendus cupiditate rem ullam ea! Quae reiciendis rem cum placeat neque temporibus deleniti ratione, aspernatur, quia consequatur soluta vitae atque assumenda repellendus. Exercitationem aperiam dolores magni in provident eius laborum incidunt animi neque voluptatum quod nesciunt illum, similique culpa voluptate deleniti esse nulla, fugit eligendi laudantium odit veritatis nemo ipsam. Earum enim consequatur repellendus ducimus illum magnam nobis assumenda vero dolor dolores accusamus eius voluptate minima itaque aspernatur sequi, recusandae hic a nemo, sapiente sunt temporibus consequuntur possimus? Maiores repellat est porro et neque commodi quam deserunt excepturi optio!</p>
+        </article>
+        <aside><img src="persona.jpg" alt="Foto perfil">
+        <h3>Debra Smith</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae exercitationem soluta porro fugit dolores distinctio nostrum doloremque eaque ipsa at.</p>
+        <a href="mailto:debra.smith@email.com">debra.smith@email.com</a>
+      </aside>
+    </div>
+
+      <section id="contacto">
+        <h3>Mándame un mensaje</h3>
+        <form>
+          <fieldset>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+             
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+         
+            <label for="cumpleaños">Fecha de nacimiento</label>
+            <input type="date" id="cumpleaños" name="cumpleaños" required>
+   
+          </fieldset>
+          <fieldset>
+
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="100" rows="7"></textarea>
+
+          </fieldset>
+          <input type="checkbox" id="news" name="newsletter">
+          <label for="news">Suscribirse a la newsletter</label>
+
+          <button>Enviar</button>
+
+        </form>
+      </section>
+      
+      
+    </main>
+    <footer>
+      <a href="">Términos y condiciones</a>
+      <a href="">Política de privacidad</a>
+    </footer>
+  </body>
 </html>

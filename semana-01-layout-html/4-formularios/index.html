@@ -7,5 +7,96 @@
     <title>Ejercicio HTML 1</title>
   </head>
 
-  <body></body>
+  <body>
+<!-- 
+
+
+
+
+
+- **Número**, con un control de tipo number que limite la entrada a un valor entre -10 y 10.
+
+
+
+- Un botón de envío.
+ -->
+    <form>
+      <fieldset>
+        <legend>Datos de registro</legend>
+
+        <ul>
+          <li>
+            <label for="nombre">Nombre de usuario:</label>
+            <input type="text" id="nombre" name="nombre" autofocus required>
+          </li>
+          <li>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos personales</legend>
+        <ul>
+          <li>
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" value="666666666" readonly>
+          </li>
+          <li>
+            <label for="url">Web personal</label>
+            <input type="url" id="url" name="direccionweb" placeholder="Escribe la URL de tu página web personal">
+          </li>
+          <li>
+            <label for="cumpleaños">Fecha cumpleaños</label>
+            <input type="date" id="cumpleaños" name="fecha">
+          </li>
+          <li>
+            <label for="color">Tu color favorito</label>
+            <input type="color" id="color" name="color">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tiempo</legend>
+        <ul>
+          <li>
+            <label for="tiempo">Tiempo</label>
+            <input type="time" id="tiempo" name="tiempo">
+          </li>
+          <li>
+            <label for="fechahora">Fecha y hora local</label>
+            <input type="datetime-local" id="fechahora" name="fechahora">
+          </li>
+          <li>
+            <label for="mes">Mes</label>
+            <input type="month" id="mes" name="mes">
+          </li>
+          <li>
+            <label for="semana">Semana</label>
+            <input type="week" id="semana" name="semana">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Búsqueda</legend>
+        <ul>
+          <li>
+            <label for="busqueda">Término de búsqueda</label>
+            <input type="search" id="busqueda" name="busqueda" disabled>
+          </li>
+          <li>
+            <label for="numero">¿Cúantas veces lo quieres buscar?</label>
+            <input type="number" id="numero" name="numero" min="-10" max="10">
+          </li>
+        </ul>
+      </fieldset>
+
+      <button>Enviar</button>
+      
+    </form>
+
+  </body>
 </html>

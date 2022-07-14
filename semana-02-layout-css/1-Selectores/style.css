@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica , sans-serif;
+}
+
+header{
+    background-color: rgb(78, 165, 227);
+    color: white;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    margin: 2rem;
+}
+
+h2{
+    color: rgb(78, 165, 227);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul{
+    padding-left: 2rem;
+    list-style: circle;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
+.importante{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+thead{
+    background-color: rgb(78, 165, 227);
+    color: white;
+
+}
+th{
+    padding: 1rem;
+    font-weight: bold;
+}
+
+tbody th{
+    background-color: rgba(78, 165, 227, 0.248);
+}
+
+tbody tr:nth-of-type(even){
+    background-color: rgb(164, 200, 239);
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: rgb(202, 222, 243);
+}
+
+#descanso{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+td{
+    padding: 1rem;
+}

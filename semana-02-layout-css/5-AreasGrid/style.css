@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    'seccion1 seccion1 seccion1'
+    'seccion2 seccion2 seccion2'
+    'footer aside aside';
+}
+
+header{
+    background-color: grey;
+    grid-area: header;
+    height: 9rem;
+    padding: 2rem;
+}
+
+section{
+    padding: 0 2rem 2rem 2rem;
+}
+
+section:first-of-type{
+    grid-area: seccion1;
+}
+section:last-of-type{
+    grid-area: seccion2;
+}
+
+aside{
+    background-color: blueviolet;
+    grid-area: aside;
+    height: 9rem;
+    padding: 2rem;
+}
+
+footer{
+    background-color: aquamarine;
+    grid-area: footer;
+    height: 9rem;
+    padding: 2rem;
+}
+
+@media (min-width: 1000px){
+    
+}

@@ -17,10 +17,44 @@ button {
   background: transparent;
   border: none;
   cursor: pointer;
+
+
 }
+
 
 svg {
   fill: gray;
 }
 
+.like{
+  animation: like 0.5s;
 
+}
+
+@keyframes like {
+  0%{
+
+  }
+
+  25%{
+    fill: red;
+    transform: scale(1.2);
+    
+  }
+
+  50%{
+    transform: scale(0.8);
+    fill: red;
+  }
+
+  75%{
+    transform: scale(1.2);
+    fill: red;
+  }
+
+  100%{
+    transform: scale(1);
+
+  }
+  
+}

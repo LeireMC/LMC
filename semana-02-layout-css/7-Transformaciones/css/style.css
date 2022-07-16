@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    left:700px;
+    width: 400px;
+    height: 400px;
+    margin: 2rem 2rem;
+
+
+}
+
+.square{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+
+
+}
+
+.square.red{
+    background-color: red;
+
+
+    transform-origin: 0 0;
+    transition: transform;
+    transition-duration: 1s;
+
+}
+
+.container:hover > .square.red{
+    transform: rotate(90deg);
+
+}
+
+.square.yellow{
+    left:200px;
+    background-color: yellow;
+    transform-origin: top right;
+    transition: transform;
+    transition-duration: 1s;
+}
+
+.container:hover > .square.yellow{
+    transform: rotate(-90deg);
+
+}
+
+.square.blue{
+    top:200px;
+    background-color: blue;
+    transform-origin: bottom left;
+    transition: transform;
+    transition-duration: 1s;
+}
+
+.container:hover > .square.blue{
+    transform: rotate(-90deg);
+
+}
+
+.square.green{
+    top:200px;
+    left:200px;
+    background-color: green;
+    transform-origin: bottom right;
+    transition: transform;
+    transition-duration: 1s;
+}
+
+.container:hover > .square.green{
+    transform: rotate(90deg);
+
+}
+
+
+p{
+position: absolute;
+top: 200px;
+left:180px;
+z-index: -1;
+
+font-size: 2rem;
+}

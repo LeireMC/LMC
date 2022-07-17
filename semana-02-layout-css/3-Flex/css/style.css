@@ -24,7 +24,7 @@ fieldset{
     border: none;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+/*     align-items: stretch; */
     flex-direction: column;
     margin-bottom: 1rem;
     width: 100%;
@@ -49,7 +49,7 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+/*     align-items: center; */
 }
 
 
@@ -73,6 +73,9 @@ fieldset:first-child li label{
     
 }
 
+fieldset:nth-child(2){
+    width: 80%;
+}
 
 fieldset:nth-child(2) label{
     font-style: italic;
@@ -83,14 +86,12 @@ fieldset:nth-child(2) label{
 }
 
 fieldset:nth-child(2) input{
-    width: 80%;
     height: 2rem;
     margin-bottom: 1rem;
     padding: 0.5rem;
 }
 
 fieldset:nth-child(2) textarea{
-    width: 80%;
     height: 5rem;
     padding: 0.5rem;
 }

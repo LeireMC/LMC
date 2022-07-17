@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --ColorFondo: aquamarine;
+    --ColorEnlaces: purple;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+
+nav menu{
+    display: flex;
+
+}
+
+menu li{
+    list-style: none;
+    margin: 3rem;
+}
+
+menu a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 1px 2px 8px rgba(137, 43, 226, 0.507);
+}
+
+body{
+    background-color: var(--ColorFondo);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Knewave', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: var(--ColorEnlaces);
+    text-shadow: 1px 1px 4px rgba(137, 43, 226, 0.688);
+}
+
+footer{
+    align-self: flex-start ;
+    padding: 0.5rem;
+}
+
+/* about */
+#about{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    gap: 1rem;
+
+}
+
+#about figure{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+
+}
+#about img{
+
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+}
+
+#about section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+/* proyectos */
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.article{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    
+ }
+
+ article{
+    background-color: white;
+    border-radius: 6%/4%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.271);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ article h2{
+    margin: 1rem;
+    text-align: center;
+}
+
+article p{
+    margin: 1rem;
+}
+article img{
+    width: 100%;
+}
+
+article menu{
+    display: flex;
+    justify-content: center;
+}
+
+article li{
+    margin: 0;
+}
+
+article li a[href*=github]{
+    display: block;
+    font-size: 0;
+    height:2rem;
+    width: 2rem;
+    margin: 0.5rem 3rem;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+    background-size: cover;
+    margin-right: 1rem;
+}
+
+article li a[href*=misitio]{
+    display: block;
+    font-size: 0;
+    height:2rem;
+    width: 2rem;
+    margin: 0.5rem 3rem;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/14/14777.png);
+    background-size: cover;
+    margin-left: 1rem;
+}
+
+/* contacto */
+#contactar{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}

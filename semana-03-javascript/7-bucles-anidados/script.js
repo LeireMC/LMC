@@ -8,25 +8,30 @@ const catalogo = [
   "barbacoa",
   "tropical",
 ];
-/* 
-console.log(catalogo[0] + " y " +  catalogo[1]); */
+
 
 function combinaciones(catalogo) {
 
+//crear dos arrays nuevos que voy a combinar entre ellos
   let catalogoA = [...catalogo];
   let catalogoB = [...catalogo];
 
-/*   console.log(catalogoA);
-  console.log(catalogoB); */
 
+//recorrer los indices del catalogoA
   for (let i = 0; i < catalogoA.length ; i++){
 /*     console.log(catalogoA[i]); */
+
+//quitar en cada vuelta del catalogoB el valor de ese i 
        catalogoB.shift();
     /* console.log(catalogoB.shift()); */
 /*     console.log(catalogoB)
     console.log(catalogoA.length) */
+
+//recorrer los indices del catalogoB una vez habiendo quitado el valor del indice del catalogoA
     for (let j = 0; j < catalogoB.length ; j++){
 /*       console.log(catalogoB[j]); */
+
+//sacar por consola los valores de las posiciones en cada vuelta
       console.log(catalogoA[i] + " y " + catalogoB[j]);
     }
   }

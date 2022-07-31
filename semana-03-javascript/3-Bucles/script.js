@@ -5,14 +5,14 @@ let hora = "";
 
 let cucu = "";
 
-for (hora = 1; hora <= 24; hora++) {
+/* for (hora = 1; hora <= 24; hora++) {
     console.log("Son las " + hora + " horas");
     cucu += "cucú "
     console.log(cucu)
 }
+ */
 
-
-/* for (hora = 1; hora <= 24; hora++) {
+for (hora = 1; hora <= 24; hora++) {
     console.log("Son las " + hora + " horas");
 
     if (hora === 1 || hora === 13 ){
@@ -25,7 +25,7 @@ for (hora = 1; hora <= 24; hora++) {
     }
     
 }
- */
+
 
 
 

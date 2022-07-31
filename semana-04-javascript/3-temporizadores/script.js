@@ -15,9 +15,9 @@ function pararPrograma(num, letra){
 
     let programa = setInterval (tiempo, 5000)
 
-    let seg = 50;
+    let seg = 0;
 
-    let min = 19;
+    let min = 0;
 
     let horas = 0;
 

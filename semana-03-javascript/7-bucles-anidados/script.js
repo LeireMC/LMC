@@ -10,38 +10,90 @@ const catalogo = [
 ];
 
 
-function combinaciones(catalogo) {
+function combinaciones(array){
+const newCatalogo=[];
+
+for (let i=0; i < array.length; i++){
+  // console.log(array[i]);
+  for (let j = i + 1; j < array.length; j++){
+  // console.log(array[j]);
+  newCatalogo.push(`${array[i]} y ${array[j]}`)
+  // console.log(newCatalogo)
+}
+
+}
+return newCatalogo;
+
+}
+
+console.log(combinaciones(catalogo));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* function combinaciones(catalogo) {
 
 //crear dos arrays nuevos que voy a combinar entre ellos
   let catalogoA = [...catalogo];
   let catalogoB = [...catalogo];
+  let newArray = []
 
 
 //recorrer los indices del catalogoA
   for (let i = 0; i < catalogoA.length ; i++){
-/*     console.log(catalogoA[i]); */
+    // console.log(catalogoA[i]);
 
 //quitar en cada vuelta del catalogoB el valor de ese i 
        catalogoB.shift();
-    /* console.log(catalogoB.shift()); */
-/*     console.log(catalogoB)
-    console.log(catalogoA.length) */
+    // console.log(catalogoB.shift());
+    // console.log(catalogoB)
+    // console.log(catalogoA.length)
 
 //recorrer los indices del catalogoB una vez habiendo quitado el valor del indice del catalogoA
     for (let j = 0; j < catalogoB.length ; j++){
-/*       console.log(catalogoB[j]); */
+      // console.log(catalogoB[j]);
 
 //sacar por consola los valores de las posiciones en cada vuelta
       console.log(catalogoA[i] + " y " + catalogoB[j]);
+
+      newArray.push(catalogoA[i] + " y " + catalogoB[j])
     }
   }
 
 
- return;
+ return newArray;
     
 }
 
-combinaciones(catalogo);
+console.log (combinaciones(catalogo)); */
 
  /*  console.log(catalogo[i] + " y " +  catalogo[i + 1]); */
   // 0+1, 1+2, 2+3, 3+4, 4+5

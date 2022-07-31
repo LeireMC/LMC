@@ -20,11 +20,26 @@ const names = [
 
 
 
-///crear array donde almacenar los nuevos valores
-let namesOk = []
+
+function limpiarNombres(array){
+  const newNames = [];
+
+  for(let i of array){
+      const incluido = newNames.includes(i)
+      if(!incluido){
+        newNames.push(i);
+      }
+  }return newNames;
+}
+
+console.log(limpiarNombres(names));
 
 
-function newNames (array){
+
+
+/* function newNames (array){
+  ///crear array donde almacenar los nuevos valores
+  let namesOk = []
 
   ///recorrer los valores del 1º array
   for (let valor of array) {
@@ -40,4 +55,4 @@ function newNames (array){
 
 }
 
-console.log(newNames(names));
+console.log(newNames(names)); */

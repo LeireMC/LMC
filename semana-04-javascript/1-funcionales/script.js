@@ -41,15 +41,40 @@ const puntuaciones = [
 ];
 
 
-/* let newPuntuaciones = puntuaciones.map() */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* let newPuntuaciones = puntuaciones.map(puntuacionMaxMin(puntuaciones));
+
+console.log(newPuntuaciones);
+
+console.log(puntuaciones)
+ */
 
 //recorrer los indices del array para poder entrar en cada uno de ellos
 
     
 
 
-function puntuacionMaxMin(array){
+/* function puntuacionMaxMin(array){
   for(let i of array){
 
     // sumar todos los valores de la clave puntos de cada indice
@@ -59,7 +84,7 @@ function puntuacionMaxMin(array){
     i.puntos=sumaPuntos
 
   }
-  /* console.log(puntuaciones) */
+  //console.log(puntuaciones)
 
   //ordenar los indices por su valor en puntos de mayor a menor
  array.sort((a,b) => b.puntos-a.puntos)
@@ -68,8 +93,103 @@ function puntuacionMaxMin(array){
   //sacar por consolael resultado
  return(array[0].equipo + " es el ganador con un total de " + array[0].puntos + " puntos, y " + array[array.length -1].equipo + " es el perdedor con un total de " + array[array.length -1].puntos + " puntos")
 }
-/* 
+
+
+
 console.log(puntuacionMaxMin(puntuaciones)); */
 
+/* function puntuacionMaxMin(array){
+  for(let i of array){
+
+    // sumar todos los valores de la clave puntos de cada indice
+    let sumaPuntos = i.puntos.reduce((acc,el) => acc + el, 0);
+
+    //añadir esa suma a cada clave puntos
+    i.puntos=sumaPuntos
+
+  }
+  //console.log(puntuaciones)
+
+  //ordenar los indices por su valor en puntos de mayor a menor
+ array.sort((a,b) => b.puntos-a.puntos)
+  return array;
+
+  //sacar por consolael resultado
+ return(array[0].equipo + " es el ganador con un total de " + array[0].puntos + " puntos, y " + array[array.length -1].equipo + " es el perdedor con un total de " + array[array.length -1].puntos + " puntos")
+}
+ */
+/* 
+function puntuacionMaxMin(array){
+  let sumaPuntuaciones = [];
+
+  for(let i of array){
+    console.log(i);
+    sumaPuntuaciones.push(i);
+    console.log(sumaPuntuaciones);
+    console.log(puntuaciones)
+  }
+
+  for(let j of sumaPuntuaciones){
+    
+    // sumar todos los valores de la clave puntos de cada indice
+    let sumaPuntos = j.puntos.reduce((acc,el) => acc + el, 0);
+    console.log(sumaPuntos);
+
+    //añadir esa suma a cada clave puntos
+    j.puntos=sumaPuntos
+
+  }
+  //console.log(puntuaciones)
+
+  //ordenar los indices por su valor en puntos de mayor a menor
+ sumaPuntuaciones.sort((a,b) => b.puntos-a.puntos)
+ console.log(sumaPuntuaciones);
+ console.log(puntuaciones)
+
+  //sacar por consolael resultado
+ return(sumaPuntuaciones[0].equipo + " es el ganador con un total de " + sumaPuntuaciones[0].puntos + " puntos, y " + sumaPuntuaciones[sumaPuntuaciones.length -1].equipo + " es el perdedor con un total de " + sumaPuntuaciones[sumaPuntuaciones.length -1].puntos + " puntos")
+}
 
 console.log(puntuacionMaxMin(puntuaciones));
+
+console.log(puntuaciones) */
+
+
+/* let newPuntuaciones=[]
+console.log(newPuntuaciones); */
+/* 
+function puntuacionMaxMin(array){
+    let newA = [];
+    
+    for( let i of array){
+
+      let newObj = {}
+      // console.log(i.puntos);
+
+      // sumar todos los valores de la clave puntos de cada indice
+      let sumaPuntos = i.puntos.reduce((acc,el) => acc + el, 0);
+      // console.log(array);
+      // console.log(sumaPuntos);
+      // console.log(i.equipo);
+
+      newObj = {equipo:i.equipo,
+                puntos: sumaPuntos,}
+
+      // console.log(newObj)
+
+      newA.push(newObj);
+      console.log(newA);
+
+    }
+    console.log(newA)
+    console.log(array);
+
+    //ordenar los indices por su valor en puntos de mayor a menor
+    newA = newA.sort((a,b) => b.puntos-a.puntos)
+
+    return (newA[0].equipo + " es el ganador con un total de " + newA[0].puntos + " puntos, y " + newA[newA.length -1].equipo + " es el perdedor con un total de " + newA[newA.length -1].puntos + " puntos");
+}
+
+console.log(puntuacionMaxMin(puntuaciones));
+
+ */

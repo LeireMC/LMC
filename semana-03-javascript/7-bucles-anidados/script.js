@@ -31,34 +31,6 @@ console.log(combinaciones(catalogo));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* function combinaciones(catalogo) {
 
 //crear dos arrays nuevos que voy a combinar entre ellos

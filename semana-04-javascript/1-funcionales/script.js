@@ -41,6 +41,36 @@ const puntuaciones = [
 ];
 
 
+let puntuacionesTotales = [];
+let equiposSumaPuntos = {}
+function puntuacionesMaxMin(array) {
+
+  puntuacionesTotales = array.map(mapper)
+
+function mapper(equipo){
+
+  console.log(equipo.puntos);
+
+  let sumaPuntos = equipo.puntos.reduce((acc,el) => 
+    acc + el, 0);
+  console.log(sumaPuntos);
+
+  equiposSumaPuntos = {...equipo, puntos:sumaPuntos}
+  console.log(equiposSumaPuntos);
+
+  return equiposSumaPuntos;
+}
+/* console.log(puntuacionesTotales); */
+
+puntuacionesTotales.sort((a, b) => b.puntos - a.puntos)
+
+return `El equipo que mayor puntuación ha conseguido ha sido ${puntuacionesTotales[0].equipo} con ${puntuacionesTotales[0].puntos} puntos y el equipo que menos puntuacion ha obtenido ha sido ${puntuacionesTotales[puntuacionesTotales.length-1].equipo} con ${puntuacionesTotales[puntuacionesTotales.length-1].puntos} puntos`
+
+
+
+}
+
+console.log(puntuacionesMaxMin(puntuaciones))
 
 
 
